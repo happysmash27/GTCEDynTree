@@ -1,0 +1,7 @@
+{
+    "parent": "dynamictrees:item/branch",
+    "textures": {
+        "bark": "gregtech:blocks/wood/rubber/log_rubber_side",
+        "rings": "gregtech:blocks/wood/rubber/log_rubber_top"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "dynamictrees:block/sapling",
+    "textures": {
+        "particle": "blocks/leaves_birch",
+        "log": "gregtech:blocks/wood/rubber/log_rubber_side",
+        "leaves": "blocks/leaves_birch"
+    }
+}

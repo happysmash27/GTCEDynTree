@@ -1,0 +1,16 @@
+[
+{
+  "modid": "gtcedyntree",
+  "name": "Dynamic Trees for GregTech",
+  "description": "Adds compatibilities between dynamic trees and GregTech",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Arisu Desu", "Max Hyper"],
+  "credits": "",
+  "logoFile": "gt-logo.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
