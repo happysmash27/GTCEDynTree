@@ -11,7 +11,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
 
-version = "1.12.2-1.0.0"
+version = "1.12.2-1.0.1"
 group = "dev.arisu.gtcedyntree" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "GTCEDynTree"
 
@@ -39,7 +39,7 @@ dependencies {
     //compile "some.group:artifact:version:classifier"
     //compile "some.group:artifact:version"
 
-    compile files('libs/DynamicTrees-1.12.2-0.9.12');
+    compile files('libs/DynamicTrees-1.12.2-0.9.27');
     compile files('libs/gregtech-1.12.2-2.2.1-beta');
 
     // real examples

@@ -22,7 +22,7 @@ public class GTCEDynTree {
     public static final String NAME = "Dynamic Trees for GregTech";
     public static final String DEPENDENCIES =
             "required-after:" + ModConstants.DYNAMICTREES_LATEST + ";" +
-                    "required-after:" + GTValues.MODID;
+                    GTValues.MOD_VERSION_DEP;
 
     @Mod.Instance
     public static GTCEDynTree instance;
