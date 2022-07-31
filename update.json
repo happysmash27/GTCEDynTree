@@ -2,10 +2,11 @@
   "homepage": "https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-gregtech-ceu-rubber-tree",
   "1.12.2": {
     "1.12.2-1.0.0": "Initial release",
-    "1.12.2-1.0.1": "Cleanup publishing info"
+    "1.12.2-1.0.1": "Cleanup publishing info",
+    "1.12.2-1.0.2": "Maintenance release, updated project build\n * Added update notifications\n * Fixed precision of drop multiplier in config"
   },
   "promos": {
-    "1.12.2-latest": "1.12.2-1.0.1",
-    "1.12.2-recommended": "1.12.2-1.0.1"
+    "1.12.2-latest": "1.12.2-1.0.2",
+    "1.12.2-recommended": "1.12.2-1.0.2"
   }
 }
