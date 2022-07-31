@@ -61,11 +61,12 @@ repositories {
 dependencies {
     minecraft "net.minecraftforge:forge:${project.minecraft_version}-${project.forge_version}"
 
+    runtimeOnly "codechicken:CodeChickenLib:${project.deps_ccl_version}:universal"
+
     implementation fg.deobf("curse.maven:DynamicTrees-${project.deps_dynamictrees_version}-${project.deps_dynamictrees_curse_ref}")
     implementation fg.deobf("curse.maven:gregtech-${project.deps_gregtechceu_version}-${project.deps_gregtechceu_curse_ref}")
     implementation "mcp.mobius.waila:Hwyla:${project.deps_waila_version}:api"
 
-    runtimeOnly "codechicken:CodeChickenLib:${project.deps_ccl_version}:universal"
     runtimeOnly "mezz.jei:jei_${project.deps_jei_version}"
     runtimeOnly "mcp.mobius.waila:Hwyla:${project.deps_waila_version}"
 }
