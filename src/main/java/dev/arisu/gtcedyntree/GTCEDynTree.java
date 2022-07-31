@@ -14,7 +14,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
         modid = GTCEDynTree.MODID,
         name = GTCEDynTree.NAME,
         dependencies = GTCEDynTree.DEPENDENCIES,
-        updateJSON = "@MOD_UPDATE_URL@"
+        updateJSON = GTCEDynTree.UPDATE_URL
 )
 public class GTCEDynTree {
 
@@ -23,6 +23,7 @@ public class GTCEDynTree {
     public static final String DEPENDENCIES =
             "required-after:" + ModConstants.DYNAMICTREES_LATEST + ";" +
                     GTValues.MOD_VERSION_DEP;
+    public static final String UPDATE_URL = "@MOD_UPDATE_URL@";
 
     @Mod.Instance
     public static GTCEDynTree instance;
