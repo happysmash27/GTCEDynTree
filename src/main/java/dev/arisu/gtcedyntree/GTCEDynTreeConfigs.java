@@ -12,7 +12,7 @@ public class GTCEDynTreeConfigs {
 
     @Config.Name("rubberDropMultiplier")
     @Config.Comment("The multiplier for rubber dropped when chopping a Rubber tree down.")
-    @Config.RangeDouble(min = 0.0f, max = 128.0f)
+    @Config.RangeDouble(min = 0.0, max = 128.0)
     @Config.RequiresMcRestart
-    public static float rubberDropMultiplier = 0.8f;
+    public static double rubberDropMultiplier = 0.8;
 }

@@ -28,7 +28,7 @@ public class CommonProxy {
 
     public void init() {
         TreeRegistry.findSpecies(new ResourceLocation(GTCEDynTree.MODID, "rubber")).
-                addDropCreator(new DropCreatorResin(MetaItems.STICKY_RESIN.getStackForm(), GTCEDynTreeConfigs.rubberDropMultiplier));
+                addDropCreator(new DropCreatorResin(MetaItems.STICKY_RESIN.getStackForm(), (float) GTCEDynTreeConfigs.rubberDropMultiplier));
 
         registerSaplingReplacement(Objects.requireNonNull(ForgeRegistries.BLOCKS.getValue(new ResourceLocation("gregtech", "rubber_sapling"))), "rubber");
     }
