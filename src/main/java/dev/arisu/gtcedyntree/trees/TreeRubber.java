@@ -16,7 +16,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.MathHelper;
 import net.minecraftforge.common.BiomeDictionary;
-import net.minecraftforge.common.BiomeDictionary.Type;
 
 import java.util.Objects;
 
@@ -27,6 +26,36 @@ public class TreeRubber extends TreeFamily {
     public static Block saplingBlock = MetaBlocks.RUBBER_SAPLING;
 
     public static BlockBranch rubberBranch = new BlockBranchRubber("branch");
+
+    public TreeRubber() {
+        super(new ResourceLocation(GTCEDynTree.MODID, "rubber"));
+
+        //Activates the conifer tops
+        hasConiferVariants = true;
+
+        setPrimitiveLog(logBlock.getDefaultState());
+
+        ModContent.rubberLeavesProperties.setTree(this);
+
+        addConnectableVanillaLeaves((state) -> state.getBlock() == leavesBlock);
+    }
+
+    @Override
+    public ItemStack getPrimitiveLogItemStack(int qty) {
+        ItemStack stack = new ItemStack(Objects.requireNonNull(logBlock), 1, 0);
+        stack.setCount(MathHelper.clamp(qty, 0, 64));
+        return stack;
+    }
+
+    @Override
+    public void createSpecies() {
+        setCommonSpecies(new SpeciesRubber(this));
+    }
+
+    @Override
+    public BlockBranch createBranch() {
+        return rubberBranch;
+    }
 
     public class SpeciesRubber extends Species {
 
@@ -66,35 +95,5 @@ public class TreeRubber extends TreeFamily {
                             "assets/" + GTCEDynTree.MODID + "/trees/rubber.txt"
             );
         }
-    }
-
-    public TreeRubber() {
-        super(new ResourceLocation(GTCEDynTree.MODID, "rubber"));
-
-        //Activates the conifer tops
-        hasConiferVariants = true;
-
-        setPrimitiveLog(logBlock.getDefaultState());
-
-        ModContent.rubberLeavesProperties.setTree(this);
-
-        addConnectableVanillaLeaves((state) -> state.getBlock() == leavesBlock);
-    }
-
-    @Override
-    public ItemStack getPrimitiveLogItemStack(int qty) {
-        ItemStack stack = new ItemStack(Objects.requireNonNull(logBlock), 1, 0);
-        stack.setCount(MathHelper.clamp(qty, 0, 64));
-        return stack;
-    }
-
-    @Override
-    public void createSpecies() {
-        setCommonSpecies(new SpeciesRubber(this));
-    }
-
-    @Override
-    public BlockBranch createBranch() {
-        return rubberBranch;
     }
 }

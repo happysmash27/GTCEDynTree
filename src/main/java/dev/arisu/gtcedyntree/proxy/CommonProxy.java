@@ -15,6 +15,10 @@ import java.util.Objects;
 
 public class CommonProxy {
 
+    private static void registerSaplingReplacement(final Block saplingBlock, final String speciesName) {
+        TreeRegistry.registerSaplingReplacer(saplingBlock.getDefaultState(), TreeRegistry.findSpecies(new ResourceLocation(GTCEDynTree.MODID, speciesName)));
+    }
+
     public void preInit(FMLPreInitializationEvent event) {
         // Disable default rubber tree world gen.
         if (com.ferreusveritas.dynamictrees.ModConfigs.worldGen) {
@@ -30,10 +34,6 @@ public class CommonProxy {
     }
 
     public void postInit() {
-    }
-
-    private static void registerSaplingReplacement(final Block saplingBlock, final String speciesName) {
-        TreeRegistry.registerSaplingReplacer(saplingBlock.getDefaultState(), TreeRegistry.findSpecies(new ResourceLocation(GTCEDynTree.MODID, speciesName)));
     }
 
 }

@@ -1,36 +1,49 @@
 [
   {
-    "select": { "type" : [ "swamp" ] },
+    "select": {
+      "type": [
+        "swamp"
+      ]
+    },
     "apply": {
-      "species" : {
-        "method" : "before",
-        "random" : {
-          "gtcedyntree:rubber" : 1,
-          "..." : 20
+      "species": {
+        "method": "before",
+        "random": {
+          "gtcedyntree:rubber": 1,
+          "...": 20
         }
       }
     }
   },
   {
-    "select": { "type" : [ "forest", "!jungle" ] },
+    "select": {
+      "type": [
+        "forest",
+        "!jungle"
+      ]
+    },
     "apply": {
-      "species" : {
-        "method" : "before",
-        "random" : {
-          "gtcedyntree:rubber" : 1,
-          "..." : 100
+      "species": {
+        "method": "before",
+        "random": {
+          "gtcedyntree:rubber": 1,
+          "...": 100
         }
       }
     }
   },
   {
-    "select": { "type" : [ "jungle" ] },
+    "select": {
+      "type": [
+        "jungle"
+      ]
+    },
     "apply": {
-      "species" : {
-        "method" : "before",
-        "random" : {
-          "gtcedyntree:rubber" : 1,
-          "..." : 200
+      "species": {
+        "method": "before",
+        "random": {
+          "gtcedyntree:rubber": 1,
+          "...": 200
         }
       }
     }

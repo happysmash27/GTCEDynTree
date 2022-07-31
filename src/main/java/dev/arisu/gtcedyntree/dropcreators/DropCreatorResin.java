@@ -10,16 +10,17 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.Random;
 
 public class DropCreatorResin extends DropCreator {
 
     private final Item resin;
     private final int resinMeta;
-    private float dropCount;
+    private final float dropCount;
 
     public DropCreatorResin(ItemStack resinStack, float dropCount) {
-        super(new ResourceLocation(GTCEDynTree.MODID, resinStack.getItem().getRegistryName().getPath()));
+        super(new ResourceLocation(GTCEDynTree.MODID, Objects.requireNonNull(resinStack.getItem().getRegistryName()).getPath()));
 
         this.resin = resinStack.getItem();
         this.resinMeta = resinStack.getMetadata();
