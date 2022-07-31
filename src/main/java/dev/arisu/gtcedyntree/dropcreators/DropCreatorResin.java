@@ -19,7 +19,7 @@ public class DropCreatorResin extends DropCreator {
     private float dropCount;
 
     public DropCreatorResin(ItemStack resinStack, float dropCount) {
-        super(new ResourceLocation(GTCEDynTree.MODID, resinStack.getItem().getRegistryName().getResourcePath()));
+        super(new ResourceLocation(GTCEDynTree.MODID, resinStack.getItem().getRegistryName().getPath()));
 
         this.resin = resinStack.getItem();
         this.resinMeta = resinStack.getMetadata();
