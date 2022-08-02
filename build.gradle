@@ -47,6 +47,9 @@ repositories {
         url 'https://cursemaven.com'
     }
     maven {
+        url 'https://harleyoconnor.com/maven' // Dynamic Trees
+    }
+    maven {
         url 'https://maven.mcmoddev.com' // HWYLA
         metadataSources { artifact() }
     }
@@ -63,7 +66,7 @@ dependencies {
 
     runtimeOnly "codechicken:CodeChickenLib:${project.deps_ccl_version}:universal"
 
-    implementation fg.deobf("curse.maven:DynamicTrees-${project.deps_dynamictrees_version}-${project.deps_dynamictrees_curse_ref}")
+    implementation fg.deobf("com.ferreusveritas.dynamictrees:DynamicTrees-${project.deps_dynamictrees_version}")
     implementation fg.deobf("curse.maven:gregtech-${project.deps_gregtechceu_version}-${project.deps_gregtechceu_curse_ref}")
     implementation "mcp.mobius.waila:Hwyla:${project.deps_waila_version}:api"
 
