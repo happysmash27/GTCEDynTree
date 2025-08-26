@@ -22,13 +22,13 @@ public class CommonProxy {
     public void preInit(FMLPreInitializationEvent event) {
         // Disable default rubber tree world gen.
         if (com.ferreusveritas.dynamictrees.ModConfigs.worldGen) {
-            ConfigHolder.worldgen.disableRubberTreeGeneration = true;
+            ConfigHolder.disableRubberTreeGeneration = true;
         }
     }
 
     public void init() {
         TreeRegistry.findSpecies(new ResourceLocation(GTCEDynTree.MODID, "rubber")).
-                addDropCreator(new DropCreatorResin(MetaItems.STICKY_RESIN.getStackForm(), (float) GTCEDynTreeConfigs.rubberDropMultiplier));
+                addDropCreator(new DropCreatorResin(MetaItems.RUBBER_DROP.getStackForm(), (float) GTCEDynTreeConfigs.rubberDropMultiplier));
 
         registerSaplingReplacement(Objects.requireNonNull(ForgeRegistries.BLOCKS.getValue(new ResourceLocation("gregtech", "rubber_sapling"))), "rubber");
     }

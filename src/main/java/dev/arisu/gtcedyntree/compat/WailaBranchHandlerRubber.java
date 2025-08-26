@@ -94,7 +94,7 @@ public class WailaBranchHandlerRubber extends WailaBranchHandler {
                     String logName = logStack.getItem().getRegistryName().toString();
                     renderString += SpecialChars.getRenderString("waila.stack", "1", logName, String.valueOf(las.logs), String.valueOf(logStack.getItemDamage()));
 
-                    ItemStack resin = MetaItems.STICKY_RESIN.getStackForm();
+                    ItemStack resin = MetaItems.RUBBER_DROP.getStackForm();
                     String amberName = resin.getItem().getRegistryName().toString();
                     renderString += SpecialChars.getRenderString("waila.stack", "1", amberName, String.valueOf((int) (lastVolume * GTCEDynTreeConfigs.rubberDropMultiplier)), String.valueOf(resin.getItemDamage()));
                 }

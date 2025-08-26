@@ -21,9 +21,9 @@ import java.util.Objects;
 
 public class TreeRubber extends TreeFamily {
 
-    public static Block leavesBlock = MetaBlocks.RUBBER_LEAVES;
-    public static Block logBlock = MetaBlocks.RUBBER_LOG;
-    public static Block saplingBlock = MetaBlocks.RUBBER_SAPLING;
+    public static Block leavesBlock = MetaBlocks.LEAVES;
+    public static Block logBlock = MetaBlocks.LOG;
+    public static Block saplingBlock = MetaBlocks.SAPLING;
 
     public static BlockBranch rubberBranch = new BlockBranchRubber("branch");
 

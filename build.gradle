@@ -63,7 +63,7 @@ dependencies {
     runtimeOnly "codechicken:CodeChickenLib:${project.deps_ccl_version}:universal"
 
     implementation fg.deobf("com.ferreusveritas.dynamictrees:DynamicTrees-${project.deps_dynamictrees_version}")
-    implementation fg.deobf("curse.maven:gregtech-${project.deps_gregtechceu_version}-${project.deps_gregtechceu_curse_ref}")
+    implementation fg.deobf("curse.maven:gregtech-nomi-${project.deps_gregtechne_version}-${project.deps_gregtechne_curse_ref}")
     implementation fg.deobf("curse.maven:hwyla-${deps_hwyla_version}-${project.deps_hwyla_curse_ref}")
 
     runtimeOnly "mezz.jei:jei_${project.deps_jei_version}"

@@ -21,8 +21,7 @@ public class GTCEDynTree {
     public static final String MODID = "@MOD_ID@";
     public static final String NAME = "@MOD_NAME@";
     public static final String DEPENDENCIES =
-            "required-after:" + ModConstants.DYNAMICTREES_LATEST + ";" +
-                    GTValues.MOD_VERSION_DEP;
+            "required-after:" + ModConstants.DYNAMICTREES_LATEST + ";required-after:gregtech";
     public static final String UPDATE_URL = "@MOD_UPDATE_URL@";
 
     @Mod.Instance
