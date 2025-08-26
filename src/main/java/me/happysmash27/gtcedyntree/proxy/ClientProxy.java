@@ -1,10 +1,10 @@
-package dev.arisu.gtcedyntree.proxy;
+package me.happysmash27.gtcedyntree.proxy;
 
 import com.ferreusveritas.dynamictrees.api.TreeHelper;
 import com.ferreusveritas.dynamictrees.api.client.ModelHelper;
 import com.ferreusveritas.dynamictrees.blocks.BlockDynamicLeaves;
 import com.ferreusveritas.dynamictrees.blocks.LeavesPaging;
-import dev.arisu.gtcedyntree.GTCEDynTree;
+import me.happysmash27.gtcedyntree.GTCEDynTree;
 import net.minecraft.block.Block;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;

@@ -1,8 +1,8 @@
-package dev.arisu.gtcedyntree.dropcreators;
+package me.happysmash27.gtcedyntree.dropcreators;
 
 import com.ferreusveritas.dynamictrees.systems.dropcreators.DropCreator;
 import com.ferreusveritas.dynamictrees.trees.Species;
-import dev.arisu.gtcedyntree.GTCEDynTree;
+import me.happysmash27.gtcedyntree.GTCEDynTree;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;

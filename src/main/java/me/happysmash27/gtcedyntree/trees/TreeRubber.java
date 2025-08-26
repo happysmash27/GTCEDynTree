@@ -1,4 +1,4 @@
-package dev.arisu.gtcedyntree.trees;
+package me.happysmash27.gtcedyntree.trees;
 
 import com.ferreusveritas.dynamictrees.blocks.BlockBranch;
 import com.ferreusveritas.dynamictrees.growthlogic.ConiferLogic;
@@ -6,10 +6,10 @@ import com.ferreusveritas.dynamictrees.systems.featuregen.FeatureGenClearVolume;
 import com.ferreusveritas.dynamictrees.systems.featuregen.FeatureGenConiferTopper;
 import com.ferreusveritas.dynamictrees.trees.Species;
 import com.ferreusveritas.dynamictrees.trees.TreeFamily;
-import dev.arisu.gtcedyntree.GTCEDynTree;
-import dev.arisu.gtcedyntree.GTCEDynTreeConfigs;
-import dev.arisu.gtcedyntree.ModContent;
-import dev.arisu.gtcedyntree.blocks.BlockBranchRubber;
+import me.happysmash27.gtcedyntree.GTCEDynTree;
+import me.happysmash27.gtcedyntree.GTCEDynTreeConfigs;
+import me.happysmash27.gtcedyntree.ModContent;
+import me.happysmash27.gtcedyntree.blocks.BlockBranchRubber;
 import gregtech.common.blocks.MetaBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;

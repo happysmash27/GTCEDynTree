@@ -1,7 +1,7 @@
-package dev.arisu.gtcedyntree.blocks;
+package me.happysmash27.gtcedyntree.blocks;
 
 import com.ferreusveritas.dynamictrees.blocks.BlockBranchBasic;
-import dev.arisu.gtcedyntree.GTCEDynTree;
+import me.happysmash27.gtcedyntree.GTCEDynTree;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;

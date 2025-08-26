@@ -1,7 +1,7 @@
-package dev.arisu.gtcedyntree;
+package me.happysmash27.gtcedyntree;
 
 import com.ferreusveritas.dynamictrees.ModConstants;
-import dev.arisu.gtcedyntree.proxy.CommonProxy;
+import me.happysmash27.gtcedyntree.proxy.CommonProxy;
 import gregtech.api.GTValues;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -27,7 +27,7 @@ public class GTCEDynTree {
     @Mod.Instance
     public static GTCEDynTree instance;
 
-    @SidedProxy(clientSide = "dev.arisu.gtcedyntree.proxy.ClientProxy", serverSide = "dev.arisu.gtcedyntree.proxy.CommonProxy")
+    @SidedProxy(clientSide = "me.happysmash27.gtcedyntree.proxy.ClientProxy", serverSide = "me.happysmash27.gtcedyntree.proxy.CommonProxy")
     public static CommonProxy proxy;
 
     @EventHandler

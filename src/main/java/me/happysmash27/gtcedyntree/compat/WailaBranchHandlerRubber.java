@@ -1,4 +1,4 @@
-package dev.arisu.gtcedyntree.compat;
+package me.happysmash27.gtcedyntree.compat;
 
 import com.ferreusveritas.dynamictrees.ModConfigs;
 import com.ferreusveritas.dynamictrees.api.TreeHelper;
@@ -10,8 +10,8 @@ import com.ferreusveritas.dynamictrees.compat.WailaBranchHandler;
 import com.ferreusveritas.dynamictrees.compat.WailaOther;
 import com.ferreusveritas.dynamictrees.systems.nodemappers.NodeNetVolume;
 import com.ferreusveritas.dynamictrees.trees.Species;
-import dev.arisu.gtcedyntree.GTCEDynTreeConfigs;
-import dev.arisu.gtcedyntree.trees.TreeRubber;
+import me.happysmash27.gtcedyntree.GTCEDynTreeConfigs;
+import me.happysmash27.gtcedyntree.trees.TreeRubber;
 import gregtech.common.items.MetaItems;
 import mcp.mobius.waila.api.IWailaConfigHandler;
 import mcp.mobius.waila.api.IWailaDataAccessor;

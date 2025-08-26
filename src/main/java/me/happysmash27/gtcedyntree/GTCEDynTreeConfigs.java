@@ -1,4 +1,4 @@
-package dev.arisu.gtcedyntree;
+package me.happysmash27.gtcedyntree;
 
 import net.minecraftforge.common.config.Config;
 

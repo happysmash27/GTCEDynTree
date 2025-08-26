@@ -1,4 +1,4 @@
-package dev.arisu.gtcedyntree;
+package me.happysmash27.gtcedyntree;
 
 import com.ferreusveritas.dynamictrees.ModItems;
 import com.ferreusveritas.dynamictrees.ModRecipes;
@@ -11,8 +11,8 @@ import com.ferreusveritas.dynamictrees.blocks.LeavesProperties;
 import com.ferreusveritas.dynamictrees.items.DendroPotion.DendroPotionType;
 import com.ferreusveritas.dynamictrees.trees.Species;
 import com.ferreusveritas.dynamictrees.trees.TreeFamily;
-import dev.arisu.gtcedyntree.trees.TreeRubber;
-import dev.arisu.gtcedyntree.worldgen.BiomeDataBasePopulator;
+import me.happysmash27.gtcedyntree.trees.TreeRubber;
+import me.happysmash27.gtcedyntree.worldgen.BiomeDataBasePopulator;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockLeaves;
 import net.minecraft.client.renderer.block.statemap.StateMap;

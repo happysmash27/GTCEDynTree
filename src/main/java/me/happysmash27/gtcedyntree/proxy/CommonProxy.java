@@ -1,9 +1,9 @@
-package dev.arisu.gtcedyntree.proxy;
+package me.happysmash27.gtcedyntree.proxy;
 
 import com.ferreusveritas.dynamictrees.api.TreeRegistry;
-import dev.arisu.gtcedyntree.GTCEDynTree;
-import dev.arisu.gtcedyntree.GTCEDynTreeConfigs;
-import dev.arisu.gtcedyntree.dropcreators.DropCreatorResin;
+import me.happysmash27.gtcedyntree.GTCEDynTree;
+import me.happysmash27.gtcedyntree.GTCEDynTreeConfigs;
+import me.happysmash27.gtcedyntree.dropcreators.DropCreatorResin;
 import gregtech.common.ConfigHolder;
 import gregtech.common.items.MetaItems;
 import net.minecraft.block.Block;
