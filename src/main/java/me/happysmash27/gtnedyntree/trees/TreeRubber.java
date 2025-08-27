@@ -1,4 +1,4 @@
-package me.happysmash27.gtcedyntree.trees;
+package me.happysmash27.gtnedyntree.trees;
 
 import com.ferreusveritas.dynamictrees.blocks.BlockBranch;
 import com.ferreusveritas.dynamictrees.growthlogic.ConiferLogic;
@@ -6,10 +6,10 @@ import com.ferreusveritas.dynamictrees.systems.featuregen.FeatureGenClearVolume;
 import com.ferreusveritas.dynamictrees.systems.featuregen.FeatureGenConiferTopper;
 import com.ferreusveritas.dynamictrees.trees.Species;
 import com.ferreusveritas.dynamictrees.trees.TreeFamily;
-import me.happysmash27.gtcedyntree.GTCEDynTree;
-import me.happysmash27.gtcedyntree.GTCEDynTreeConfigs;
-import me.happysmash27.gtcedyntree.ModContent;
-import me.happysmash27.gtcedyntree.blocks.BlockBranchRubber;
+import me.happysmash27.gtnedyntree.GTNEDynTree;
+import me.happysmash27.gtnedyntree.GTNEDynTreeConfigs;
+import me.happysmash27.gtnedyntree.ModContent;
+import me.happysmash27.gtnedyntree.blocks.BlockBranchRubber;
 import gregtech.common.blocks.MetaBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
@@ -28,7 +28,7 @@ public class TreeRubber extends TreeFamily {
     public static BlockBranch rubberBranch = new BlockBranchRubber("branch");
 
     public TreeRubber() {
-        super(new ResourceLocation(GTCEDynTree.MODID, "rubber"));
+        super(new ResourceLocation(GTNEDynTree.MODID, "rubber"));
 
         //Activates the conifer tops
         hasConiferVariants = true;
@@ -64,7 +64,7 @@ public class TreeRubber extends TreeFamily {
 
             setSoilLongevity(2);
 
-            if (GTCEDynTreeConfigs.classicLookingRubberTree) {
+            if (GTNEDynTreeConfigs.classicLookingRubberTree) {
                 setBasicGrowingParameters(0.9f, 10.0f, 6, 4, 0.8f);
                 this.setGrowthLogicKit(new ConiferLogic(4f).setHeightVariation(2));
                 this.addGenFeature(new FeatureGenConiferTopper(ModContent.rubberLeavesProperties));
@@ -90,9 +90,9 @@ public class TreeRubber extends TreeFamily {
         @Override
         public void addJoCodes() {
             joCodeStore.addCodesFromFile(this,
-                    GTCEDynTreeConfigs.classicLookingRubberTree ?
-                            "assets/" + GTCEDynTree.MODID + "/trees/rubber_classic.txt" :
-                            "assets/" + GTCEDynTree.MODID + "/trees/rubber.txt"
+                    GTNEDynTreeConfigs.classicLookingRubberTree ?
+                            "assets/" + GTNEDynTree.MODID + "/trees/rubber_classic.txt" :
+                            "assets/" + GTNEDynTree.MODID + "/trees/rubber.txt"
             );
         }
     }

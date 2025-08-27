@@ -1,8 +1,8 @@
-package me.happysmash27.gtcedyntree.dropcreators;
+package me.happysmash27.gtnedyntree.dropcreators;
 
 import com.ferreusveritas.dynamictrees.systems.dropcreators.DropCreator;
 import com.ferreusveritas.dynamictrees.trees.Species;
-import me.happysmash27.gtcedyntree.GTCEDynTree;
+import me.happysmash27.gtnedyntree.GTNEDynTree;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
@@ -20,7 +20,7 @@ public class DropCreatorResin extends DropCreator {
     private final float dropCount;
 
     public DropCreatorResin(ItemStack resinStack, float dropCount) {
-        super(new ResourceLocation(GTCEDynTree.MODID, Objects.requireNonNull(resinStack.getItem().getRegistryName()).getPath()));
+        super(new ResourceLocation(GTNEDynTree.MODID, Objects.requireNonNull(resinStack.getItem().getRegistryName()).getPath()));
 
         this.resin = resinStack.getItem();
         this.resinMeta = resinStack.getMetadata();

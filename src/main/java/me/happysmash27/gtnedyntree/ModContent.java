@@ -1,4 +1,4 @@
-package me.happysmash27.gtcedyntree;
+package me.happysmash27.gtnedyntree;
 
 import com.ferreusveritas.dynamictrees.ModItems;
 import com.ferreusveritas.dynamictrees.ModRecipes;
@@ -11,8 +11,8 @@ import com.ferreusveritas.dynamictrees.blocks.LeavesProperties;
 import com.ferreusveritas.dynamictrees.items.DendroPotion.DendroPotionType;
 import com.ferreusveritas.dynamictrees.trees.Species;
 import com.ferreusveritas.dynamictrees.trees.TreeFamily;
-import me.happysmash27.gtcedyntree.trees.TreeRubber;
-import me.happysmash27.gtcedyntree.worldgen.BiomeDataBasePopulator;
+import me.happysmash27.gtnedyntree.trees.TreeRubber;
+import me.happysmash27.gtnedyntree.worldgen.BiomeDataBasePopulator;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockLeaves;
 import net.minecraft.client.renderer.block.statemap.StateMap;
@@ -34,8 +34,8 @@ import net.minecraftforge.registries.IForgeRegistry;
 import java.util.ArrayList;
 import java.util.Collections;
 
-@Mod.EventBusSubscriber(modid = GTCEDynTree.MODID)
-@ObjectHolder(GTCEDynTree.MODID)
+@Mod.EventBusSubscriber(modid = GTNEDynTree.MODID)
+@ObjectHolder(GTNEDynTree.MODID)
 public class ModContent {
 
     public static ILeavesProperties rubberLeavesProperties;
@@ -50,12 +50,12 @@ public class ModContent {
     public static void registerBlocks(final RegistryEvent.Register<Block> event) {
         IForgeRegistry<Block> registry = event.getRegistry();
 
-        if (GTCEDynTreeConfigs.classicLookingRubberTree)
+        if (GTNEDynTreeConfigs.classicLookingRubberTree)
             rubberLeavesProperties = setUpLeaves(TreeRubber.leavesBlock, "conifer", 6, 13);
         else
             rubberLeavesProperties = setUpLeaves(TreeRubber.leavesBlock, "deciduous", 3, 13);
 
-        LeavesPaging.getLeavesBlockForSequence(GTCEDynTree.MODID, 0, rubberLeavesProperties);
+        LeavesPaging.getLeavesBlockForSequence(GTNEDynTree.MODID, 0, rubberLeavesProperties);
 
         TreeFamily rubberTree = new TreeRubber();
         Collections.addAll(trees, rubberTree);
@@ -63,7 +63,7 @@ public class ModContent {
         trees.forEach(tree -> tree.registerSpecies(Species.REGISTRY));
         ArrayList<Block> treeBlocks = new ArrayList<>();
         trees.forEach(tree -> tree.getRegisterableBlocks(treeBlocks));
-        treeBlocks.addAll(LeavesPaging.getLeavesMapForModId(GTCEDynTree.MODID).values());
+        treeBlocks.addAll(LeavesPaging.getLeavesMapForModId(GTNEDynTree.MODID).values());
         registry.registerAll(treeBlocks.toArray(new Block[0]));
     }
 
@@ -104,7 +104,7 @@ public class ModContent {
     }
 
     public static void setUpSeedRecipes(String name, ItemStack treeSapling) {
-        Species treeSpecies = TreeRegistry.findSpecies(new ResourceLocation(GTCEDynTree.MODID, name));
+        Species treeSpecies = TreeRegistry.findSpecies(new ResourceLocation(GTNEDynTree.MODID, name));
         ItemStack treeSeed = treeSpecies.getSeedStack(1);
         ItemStack treeTransformationPotion = ModItems.dendroPotion.setTargetTree(new ItemStack(ModItems.dendroPotion, 1, DendroPotionType.TRANSFORM.getIndex()), treeSpecies.getFamily());
         BrewingRecipeRegistry.addRecipe(new ItemStack(ModItems.dendroPotion, 1, DendroPotionType.TRANSFORM.getIndex()), treeSeed, treeTransformationPotion);
@@ -119,6 +119,6 @@ public class ModContent {
             ModelHelper.regModel(tree.getCommonSpecies().getSeed());
             ModelHelper.regModel(tree);
         }
-        LeavesPaging.getLeavesMapForModId(GTCEDynTree.MODID).forEach((key, leaves) -> ModelLoader.setCustomStateMapper(leaves, new StateMap.Builder().ignore(BlockLeaves.DECAYABLE).build()));
+        LeavesPaging.getLeavesMapForModId(GTNEDynTree.MODID).forEach((key, leaves) -> ModelLoader.setCustomStateMapper(leaves, new StateMap.Builder().ignore(BlockLeaves.DECAYABLE).build()));
     }
 }

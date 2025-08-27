@@ -1,10 +1,10 @@
-package me.happysmash27.gtcedyntree.proxy;
+package me.happysmash27.gtnedyntree.proxy;
 
 import com.ferreusveritas.dynamictrees.api.TreeHelper;
 import com.ferreusveritas.dynamictrees.api.client.ModelHelper;
 import com.ferreusveritas.dynamictrees.blocks.BlockDynamicLeaves;
 import com.ferreusveritas.dynamictrees.blocks.LeavesPaging;
-import me.happysmash27.gtcedyntree.GTCEDynTree;
+import me.happysmash27.gtnedyntree.GTNEDynTree;
 import net.minecraft.block.Block;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -19,7 +19,7 @@ public class ClientProxy extends CommonProxy {
     }
 
     public void registerColorHandlers() {
-        for (BlockDynamicLeaves leaves : LeavesPaging.getLeavesMapForModId(GTCEDynTree.MODID).values()) {
+        for (BlockDynamicLeaves leaves : LeavesPaging.getLeavesMapForModId(GTNEDynTree.MODID).values()) {
             ModelHelper.regColorHandler(leaves, (state, worldIn, pos, tintIndex) -> {
                 //boolean inWorld = worldIn != null && pos != null;
 

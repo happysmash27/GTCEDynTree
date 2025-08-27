@@ -1,9 +1,9 @@
-package me.happysmash27.gtcedyntree;
+package me.happysmash27.gtnedyntree;
 
 import net.minecraftforge.common.config.Config;
 
-@Config(modid = GTCEDynTree.MODID, category = "trees")
-public class GTCEDynTreeConfigs {
+@Config(modid = GTNEDynTree.MODID, category = "trees")
+public class GTNEDynTreeConfigs {
 
     @Config.Name("classicLookingRubberTree")
     @Config.Comment("Makes rubber trees shorter and pointier, similar to the non-dynamic version.")

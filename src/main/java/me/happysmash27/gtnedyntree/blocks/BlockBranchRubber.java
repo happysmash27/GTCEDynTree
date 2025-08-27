@@ -1,7 +1,7 @@
-package me.happysmash27.gtcedyntree.blocks;
+package me.happysmash27.gtnedyntree.blocks;
 
 import com.ferreusveritas.dynamictrees.blocks.BlockBranchBasic;
-import me.happysmash27.gtcedyntree.GTCEDynTree;
+import me.happysmash27.gtnedyntree.GTNEDynTree;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
@@ -10,7 +10,7 @@ import net.minecraft.world.World;
 public class BlockBranchRubber extends BlockBranchBasic {
 
     public BlockBranchRubber(String name) {
-        super(new ResourceLocation(GTCEDynTree.MODID, "rubber" + name).toString());
+        super(new ResourceLocation(GTNEDynTree.MODID, "rubber" + name).toString());
     }
 
     @Override

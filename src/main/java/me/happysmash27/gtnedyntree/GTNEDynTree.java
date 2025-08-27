@@ -1,7 +1,7 @@
-package me.happysmash27.gtcedyntree;
+package me.happysmash27.gtnedyntree;
 
 import com.ferreusveritas.dynamictrees.ModConstants;
-import me.happysmash27.gtcedyntree.proxy.CommonProxy;
+import me.happysmash27.gtnedyntree.proxy.CommonProxy;
 import gregtech.api.GTValues;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -11,12 +11,12 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(
-        modid = GTCEDynTree.MODID,
-        name = GTCEDynTree.NAME,
-        dependencies = GTCEDynTree.DEPENDENCIES,
-        updateJSON = GTCEDynTree.UPDATE_URL
+        modid = GTNEDynTree.MODID,
+        name = GTNEDynTree.NAME,
+        dependencies = GTNEDynTree.DEPENDENCIES,
+        updateJSON = GTNEDynTree.UPDATE_URL
 )
-public class GTCEDynTree {
+public class GTNEDynTree {
 
     public static final String MODID = "@MOD_ID@";
     public static final String NAME = "@MOD_NAME@";
@@ -25,9 +25,9 @@ public class GTCEDynTree {
     public static final String UPDATE_URL = "@MOD_UPDATE_URL@";
 
     @Mod.Instance
-    public static GTCEDynTree instance;
+    public static GTNEDynTree instance;
 
-    @SidedProxy(clientSide = "me.happysmash27.gtcedyntree.proxy.ClientProxy", serverSide = "me.happysmash27.gtcedyntree.proxy.CommonProxy")
+    @SidedProxy(clientSide = "me.happysmash27.gtnedyntree.proxy.ClientProxy", serverSide = "me.happysmash27.gtnedyntree.proxy.CommonProxy")
     public static CommonProxy proxy;
 
     @EventHandler

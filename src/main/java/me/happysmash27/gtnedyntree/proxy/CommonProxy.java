@@ -1,9 +1,9 @@
-package me.happysmash27.gtcedyntree.proxy;
+package me.happysmash27.gtnedyntree.proxy;
 
 import com.ferreusveritas.dynamictrees.api.TreeRegistry;
-import me.happysmash27.gtcedyntree.GTCEDynTree;
-import me.happysmash27.gtcedyntree.GTCEDynTreeConfigs;
-import me.happysmash27.gtcedyntree.dropcreators.DropCreatorResin;
+import me.happysmash27.gtnedyntree.GTNEDynTree;
+import me.happysmash27.gtnedyntree.GTNEDynTreeConfigs;
+import me.happysmash27.gtnedyntree.dropcreators.DropCreatorResin;
 import gregtech.common.ConfigHolder;
 import gregtech.common.items.MetaItems;
 import net.minecraft.block.Block;
@@ -16,7 +16,7 @@ import java.util.Objects;
 public class CommonProxy {
 
     private static void registerSaplingReplacement(final Block saplingBlock, final String speciesName) {
-        TreeRegistry.registerSaplingReplacer(saplingBlock.getDefaultState(), TreeRegistry.findSpecies(new ResourceLocation(GTCEDynTree.MODID, speciesName)));
+        TreeRegistry.registerSaplingReplacer(saplingBlock.getDefaultState(), TreeRegistry.findSpecies(new ResourceLocation(GTNEDynTree.MODID, speciesName)));
     }
 
     public void preInit(FMLPreInitializationEvent event) {
@@ -27,8 +27,8 @@ public class CommonProxy {
     }
 
     public void init() {
-        TreeRegistry.findSpecies(new ResourceLocation(GTCEDynTree.MODID, "rubber")).
-                addDropCreator(new DropCreatorResin(MetaItems.RUBBER_DROP.getStackForm(), (float) GTCEDynTreeConfigs.rubberDropMultiplier));
+        TreeRegistry.findSpecies(new ResourceLocation(GTNEDynTree.MODID, "rubber")).
+                addDropCreator(new DropCreatorResin(MetaItems.RUBBER_DROP.getStackForm(), (float) GTNEDynTreeConfigs.rubberDropMultiplier));
 
         registerSaplingReplacement(Objects.requireNonNull(ForgeRegistries.BLOCKS.getValue(new ResourceLocation("gregtech", "rubber_sapling"))), "rubber");
     }

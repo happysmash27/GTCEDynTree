@@ -1,4 +1,4 @@
-package me.happysmash27.gtcedyntree.compat;
+package me.happysmash27.gtnedyntree.compat;
 
 import com.ferreusveritas.dynamictrees.ModConfigs;
 import com.ferreusveritas.dynamictrees.api.TreeHelper;
@@ -10,8 +10,8 @@ import com.ferreusveritas.dynamictrees.compat.WailaBranchHandler;
 import com.ferreusveritas.dynamictrees.compat.WailaOther;
 import com.ferreusveritas.dynamictrees.systems.nodemappers.NodeNetVolume;
 import com.ferreusveritas.dynamictrees.trees.Species;
-import me.happysmash27.gtcedyntree.GTCEDynTreeConfigs;
-import me.happysmash27.gtcedyntree.trees.TreeRubber;
+import me.happysmash27.gtnedyntree.GTNEDynTreeConfigs;
+import me.happysmash27.gtnedyntree.trees.TreeRubber;
 import gregtech.common.items.MetaItems;
 import mcp.mobius.waila.api.IWailaConfigHandler;
 import mcp.mobius.waila.api.IWailaDataAccessor;
@@ -96,7 +96,7 @@ public class WailaBranchHandlerRubber extends WailaBranchHandler {
 
                     ItemStack resin = MetaItems.RUBBER_DROP.getStackForm();
                     String amberName = resin.getItem().getRegistryName().toString();
-                    renderString += SpecialChars.getRenderString("waila.stack", "1", amberName, String.valueOf((int) (lastVolume * GTCEDynTreeConfigs.rubberDropMultiplier)), String.valueOf(resin.getItemDamage()));
+                    renderString += SpecialChars.getRenderString("waila.stack", "1", amberName, String.valueOf((int) (lastVolume * GTNEDynTreeConfigs.rubberDropMultiplier)), String.valueOf(resin.getItemDamage()));
                 }
 
                 if (las.sticks > 0) {

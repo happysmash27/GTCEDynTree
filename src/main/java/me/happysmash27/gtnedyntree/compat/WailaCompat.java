@@ -1,6 +1,6 @@
-package me.happysmash27.gtcedyntree.compat;
+package me.happysmash27.gtnedyntree.compat;
 
-import me.happysmash27.gtcedyntree.blocks.BlockBranchRubber;
+import me.happysmash27.gtnedyntree.blocks.BlockBranchRubber;
 import mcp.mobius.waila.api.IWailaPlugin;
 import mcp.mobius.waila.api.IWailaRegistrar;
 import mcp.mobius.waila.api.WailaPlugin;

@@ -1,9 +1,9 @@
-package me.happysmash27.gtcedyntree.worldgen;
+package me.happysmash27.gtnedyntree.worldgen;
 
 import com.ferreusveritas.dynamictrees.api.worldgen.IBiomeDataBasePopulator;
 import com.ferreusveritas.dynamictrees.worldgen.BiomeDataBase;
 import com.ferreusveritas.dynamictrees.worldgen.BiomeDataBasePopulatorJson;
-import me.happysmash27.gtcedyntree.GTCEDynTree;
+import me.happysmash27.gtnedyntree.GTNEDynTree;
 import net.minecraft.util.ResourceLocation;
 
 public class BiomeDataBasePopulator implements IBiomeDataBasePopulator {
@@ -13,7 +13,7 @@ public class BiomeDataBasePopulator implements IBiomeDataBasePopulator {
     private final BiomeDataBasePopulatorJson jsonPopulator;
 
     public BiomeDataBasePopulator() {
-        jsonPopulator = new BiomeDataBasePopulatorJson(new ResourceLocation(GTCEDynTree.MODID, RESOURCEPATH));
+        jsonPopulator = new BiomeDataBasePopulatorJson(new ResourceLocation(GTNEDynTree.MODID, RESOURCEPATH));
     }
 
     public void populate(BiomeDataBase dbase) {
