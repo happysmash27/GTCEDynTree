@@ -1,6 +1,6 @@
 {
   "parent": "dynamictrees:item/standardseed",
   "textures": {
-    "layer0": "gtcedyntree:items/rubberseed"
+    "layer0": "gtnedyntree:items/rubberseed"
   }
 }

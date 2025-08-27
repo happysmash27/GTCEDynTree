@@ -1,7 +1,7 @@
 {
   "variants": {
     "normal": {
-      "model": "gtcedyntree:rubberbranch#dynamictree"
+      "model": "gtnedyntree:rubberbranch#dynamictree"
     }
   }
 }

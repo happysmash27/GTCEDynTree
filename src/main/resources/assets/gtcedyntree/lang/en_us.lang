@@ -1,9 +1,9 @@
 # Items
-item.gtcedyntree:rubberseed.name=Rubber Pod
+item.gtnedyntree:rubberseed.name=Rubber Pod
 
 # Species
-species.gtcedyntree:rubber.name=Rubber
+species.gtnedyntree:rubber.name=Rubber
 
 # Blocks
-tile.gtcedyntree:leaves0.name=Rubber Tree Leaves
-tile.gtcedyntree:rubberbranch.name=Rubber Tree
+tile.gtnedyntree:leaves0.name=Rubber Tree Leaves
+tile.gtnedyntree:rubberbranch.name=Rubber Tree
